@@ -4,8 +4,9 @@
   "description": "typescript nodejs API ",
   "main": "index.js",
   "scripts": {
+    "build":"tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "npm build && node dist/src/index.js"
   },
   "repository": {
     "type": "git",
